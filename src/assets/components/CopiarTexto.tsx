@@ -6,8 +6,8 @@ const CopiarTexto = () => {
     const { copied, copyToClipboard } = useClipboard();
 
     return (
-        <div>
-            <h3>Exemplo de Clipboard Hook</h3>
+        <section>
+            <h3 className='page-title'>Exemplo de Clipboard Hook</h3>
             <input
                 type="text"
                 placeholder="Digite um texto..."
@@ -19,7 +19,7 @@ const CopiarTexto = () => {
             <button onClick={() => copyToClipboard(text)} disabled={copied}>
                 {copied ? "Texto Copiado!" : "Copiar Texto"}
             </button>
-        </div>
+        </section>
     );
 };
 

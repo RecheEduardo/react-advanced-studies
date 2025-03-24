@@ -27,8 +27,8 @@ const BuscarAlunos = () => {
     }
 
   return (
-    <>
-        <h3>Digite abaixo o ID do aluno que você quer pesquisar</h3>
+    <section>
+        <h3 className='page-title'>Digite abaixo o ID do aluno que você quer pesquisar</h3>
         <form onSubmit={handleSubmit}>
             <input type="number" name="wanted-student" id="wanted-student" 
                 placeholder='Digite o ID do aluno desejado'
@@ -54,7 +54,7 @@ const BuscarAlunos = () => {
                 <h4>O ultimo estudante buscado foi o: Aluno {previousStudent}</h4>
             </>
         }
-    </>
+    </section>
   )
 }
 

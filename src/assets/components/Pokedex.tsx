@@ -28,8 +28,8 @@ const Pokedex = () => {
     }
 
   return (
-    <>
-        <h2>Pokedex Interativa</h2>
+    <section>
+        <h2 className='page-title'>Pokedex Interativa</h2>
         <h3>Digite o nome do seu Pokemon favorito abaixo:</h3>
         <form onSubmit={handleSubmit}>
             <input type="text" name="pokemon" id="pokemon" 
@@ -52,7 +52,7 @@ const Pokedex = () => {
                 <h2>Seu atual Pokemon favorito é o: {favPokemon.charAt(0).toUpperCase() + favPokemon.substring(1)}</h2>
             </>
         }
-    </>
+    </section>
   )
 }
 
