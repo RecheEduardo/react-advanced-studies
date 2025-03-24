@@ -15,7 +15,6 @@ const CopiarTexto = () => {
                 onChange={(e) => setText(e.target.value)}
                 style={{ fontSize: 30 }}
             />
-            <br /><br />
             <button onClick={() => copyToClipboard(text)} disabled={copied}>
                 {copied ? "Texto Copiado!" : "Copiar Texto"}
             </button>

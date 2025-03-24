@@ -36,8 +36,6 @@ const BuscarAlunos = () => {
                 onChange={e => setStudent(e.target.value)}
                 style={{fontSize: 30}}
             />
-            <br />
-            <br />
             <button type='submit'>Buscar Estudante</button>
         </form>
         {data && wantedStudent && (

@@ -41,7 +41,7 @@ const Pokedex = () => {
         </form>
         {data &&
             <>
-                <h2>{data.name.charAt(0).toUpperCase() + data.name.substring(1)}</h2>
+                <h2>Aqui está um {data.name.charAt(0).toUpperCase() + data.name.substring(1)}!</h2>
                 <img src={data.sprites.front_default} height={200}/>
             </>
         }

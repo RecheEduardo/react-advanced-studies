@@ -14,6 +14,23 @@ body{
   background-color: #fafafa;
 }
 
+button{
+  border: none;
+  padding: .5rem;
+  font-size: 2rem;
+  background-color: #1b1b1b;
+  color: #fafafa;
+  cursor: pointer;
+  transition: .25s;
+}button:hover{ background-color: #303030; transition: .25s; scale: 0.95; }
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 a{
   font-weight: bold;
   text-decoration: none;
@@ -48,6 +65,7 @@ section{
 }
 
 .active{
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(80, 29, 29);
+  padding: .25rem;
   border-radius: .25rem;
 }
